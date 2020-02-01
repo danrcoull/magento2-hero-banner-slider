@@ -34,8 +34,8 @@ The sliders also give you the ability to show the banner names below the slider 
 
  -  Run the following commands
 ```bash
-composer config repositories.productpricelist vcs https://github.com/danrcoull/Magento2-InfiniteScroll.git
-composer require boxleaf/module-bannerslider:dev-master
+composer config repositories.productpricelist vcs https://github.com/danrcoull/magento2-hero-banner-slider.git
+composer require boxleaf/module-bannerslider:1.0.1
 ```
  -  Followed by the below to enable the module in magento 2
 ```bash
