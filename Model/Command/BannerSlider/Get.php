@@ -49,7 +49,7 @@ class Get implements GetInterface {
 
         $bannerSlider = $this->_bannerSliderFactory->create();
         $this->_resource->load($bannerSlider, $bannerSliderId);
-        if (!$bannerSlider->getBannerSliderId()) {
+        if (!$bannerSlider->getId()) {
             throw new NoSuchEntityException(__('BannerSlider with id "%1" does not exist.', $bannerSliderId));
         }
         return $bannerSlider->getDataModel();

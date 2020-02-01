@@ -51,7 +51,7 @@ class Get implements \BoxLeaf\BannerSlider\Api\Command\Banners\GetInterface {
 
         $banners = $this->_bannersFactory->create();
         $this->_resource->load($banners, $bannersId);
-        if (!$banners->getBannersId()) {
+        if (!$banners->getId()) {
             throw new NoSuchEntityException(__('Banners with id "%1" does not exist.', $bannersId));
         }
         return $banners->getDataModel();

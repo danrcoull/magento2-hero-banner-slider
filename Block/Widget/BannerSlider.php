@@ -105,8 +105,10 @@ class BannerSlider extends Template implements BlockInterface
         $sliderId= $this->getData('slider_id');
         try {
             $bannerSlider = $this->bannerSliderRepository->get($sliderId);
+
             return $bannerSlider;
         }catch (\Exception $e) {
+            die($e->getMessage());
             return false;
         }
     }
