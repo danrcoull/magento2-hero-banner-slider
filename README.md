@@ -1,6 +1,7 @@
 # Mage2 Module BoxLeaf BannerSlider
 
 From  [boxleaf Digital](https://www.boxleafdigital.com)
+Read our article [boxleaf Digital hero banner module](https://www.boxleafdigital.com/magento-2-hero-banner-and-slider/)
 
     ``boxleaf/module-bannerslider``
 
