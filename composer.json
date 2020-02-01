@@ -1,0 +1,23 @@
+{
+    "name": "boxleaf/module-bannerslider",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "version": "1.0.1",
+    "authors": [
+        {
+            "email": "hello@boxleafdigital.com",
+            "name": "Daniel Coull"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "BoxLeaf\\BannerSlider\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
