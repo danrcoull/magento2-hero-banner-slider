@@ -85,7 +85,7 @@ class Save extends \Magento\Backend\App\Action
             }
 
             if (isset($data['banner_image_mobile'][0]['name']) && isset($data['banner_image_mobile'][0]['tmp_name'])) {
-                $data['banner_image_mobile'] = $this->imageUpload->moveFileFromTmp($data['banner_image_mobile'][0]['name']);
+                $data['banner_image_mobile'] = 'banner/image/'.$this->imageUpload->moveFileFromTmp($data['banner_image_mobile'][0]['name']);
             } elseif (isset($data['banner_image_mobile'][0]['name']) && !isset($data['banner_image_mobile'][0]['tmp_name'])) {
                 $data['banner_image_mobile'] =str_replace([$mediaUrl,'/media/'],'',$data['banner_image_mobile'][0]['url']);
             } else {
